@@ -1,0 +1,30 @@
+.section-qualities {
+    padding-top: 94px;
+}
+
+.qualities-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+.qualities-text {
+    color: $secondary-text-color;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    margin-top: 10px;
+}
+
+.qual:not(:last-child) {
+    margin-right: 30px;
+}
+
+.qual:last-child {
+    margin-right: 0px;
+}

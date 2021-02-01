@@ -1,0 +1,56 @@
+body {
+    background-color: $main-bg-color;
+    color: $main-text-color;
+    font-family: $first-text-style, sans-serif;
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, li, a, ul, p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.list {
+    display: flex;
+
+    list-style-type: none;
+}
+
+.list.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.list.projects {
+    flex-wrap: wrap;
+    margin-bottom: 94px;
+}
+
+.visually-hiden {
+    position:absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+}

@@ -1,0 +1,36 @@
+.logo-header {
+    color: $main-text-color;
+    font-family: $second-text-style;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    margin-right: 93px;
+}
+
+.logo-footer {
+    color: $main-bg-color;
+    font-family: $second-text-style;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    margin-bottom: 20px;
+}
+
+.logo-web {
+    color: $accent-color;
+    font-family: $second-text-style;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}

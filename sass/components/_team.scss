@@ -1,0 +1,56 @@
+.specialist {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.position {
+    color: $secondary-text-color;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-top:10px;
+
+}
+.info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+} 
+.spec:not(:last-child) {
+    margin-right: 30px;
+}
+
+.container-element.spec {
+    width: 270px;
+    height: 428px;
+    background-color: $main-bg-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.section-team {
+    background-color: $secondary-bg-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.social-element {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
