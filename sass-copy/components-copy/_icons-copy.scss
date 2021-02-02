@@ -47,6 +47,25 @@
     transition: $animation-duration $animation-type;
 }
 
+.qualit-ico {
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-position: center;
+    background-color: $secondary-bg-color;
+    background-size: auto;
+}
+
+.icon-qual {
+    width: 270px;
+    height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .icon {
     color: rgba(175,177,184,1);
 
