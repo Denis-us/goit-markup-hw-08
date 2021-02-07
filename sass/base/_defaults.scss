@@ -4,11 +4,18 @@ body {
     font-family: $first-text-style, sans-serif;
 }
 
+.section {
+    width:480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .container {
-    width: 1200px;
+    width: 480px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
+
 }
 
 h1, h2, h3, li, a, ul, p {
@@ -21,21 +28,8 @@ li {
     list-style: none;
 }
 
-.list {
-    display: flex;
-
-    list-style-type: none;
-}
-
-.list.buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.list.projects {
-    flex-wrap: wrap;
-    margin-bottom: 94px;
+a {
+    text-decoration: none;
 }
 
 .visually-hiden {
@@ -53,4 +47,10 @@ li {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.container-title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 33px;
 }

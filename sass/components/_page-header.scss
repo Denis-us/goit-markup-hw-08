@@ -17,10 +17,6 @@ header {
     }
 }
 
-.nav-link {
-    display: block;
-}
-
 .logo-header {
     color: $main-text-color;
     font-family: $second-text-style;
@@ -41,10 +37,6 @@ header {
     line-height: 28px;
     letter-spacing: 0.03em;
     text-decoration: none;
-}
-
-nav {
-    display: none;
 }
 
 .site-nav {

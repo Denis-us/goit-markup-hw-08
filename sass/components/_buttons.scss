@@ -1,65 +1,65 @@
-.button-element:not(:last-child) {
-    margin-right: 8px;
-}
+// .button-element:not(:last-child) {
+//     margin-right: 8px;
+// }
 
-.sort-buttons {
-    padding-top: 94px;
-}
+// .sort-buttons {
+//     padding-top: 94px;
+// }
 
-.footer-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+// .footer-button {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
-    height: 50px;
-    width: 200px;
-    margin-left: 0;
-    margin-top: 36px;
+//     height: 50px;
+//     width: 200px;
+//     margin-left: 0;
+//     margin-top: 36px;
 
-    background-color: $accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+//     background-color: $accent-color;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
 
-    cursor:pointer;
-}
+//     cursor:pointer;
+// }
 
-.footer-button > p {
-    font-family: $first-text-style;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
+// .footer-button > p {
+//     font-family: $first-text-style;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 16px;
+//     line-height: 30px;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     letter-spacing: 0.06em;
 
-    margin-right: 10px;
+//     margin-right: 10px;
 
-    color: $main-bg-color;
-}
+//     color: $main-bg-color;
+// }
 
-.button-closer {
-    position:absolute;
-    display: inline-block;
-    top: 0;
-    right: 0;
+// .button-closer {
+//     position:absolute;
+//     display: inline-block;
+//     top: 0;
+//     right: 0;
 
-    margin-right: 8px;
-    margin-top: 8px;
+//     margin-right: 8px;
+//     margin-top: 8px;
 
-    width: 30px;
-    height: 30px;
+//     width: 30px;
+//     height: 30px;
 
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: $main-bg-color;
-    cursor: pointer;
-    z-index: 1;
+//     border-radius: 50%;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     background-color: $main-bg-color;
+//     cursor: pointer;
+//     z-index: 1;
 
-    &:focus-within .closer-icon,
-    &:hover .closer-icon {
-    fill:$accent-color;
-}
-}
+//     &:focus-within .closer-icon,
+//     &:hover .closer-icon {
+//     fill:$accent-color;
+// }
+// }

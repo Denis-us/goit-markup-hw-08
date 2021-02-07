@@ -1,43 +1,91 @@
-.footer-address {
-    margin-right: 70px;
-
-    p {
-        display: block;
-    
-        color: $main-bg-color;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-    
-        margin-top: 20px;
-        margin-bottom: 9px;
-    }
-
-    a {
-        display: block;
-        margin-bottom: 9px;
-    }
+.section.footer {
+    background-color: $third-bg-color;
 }
 
-footer {
-    background-color: $third-bg-color;
+.container.footer{
+    text-align: center;
+}
 
-    padding-top: 60px;
-    padding-bottom: 60px;
+.logo-footer {
+    color: $main-bg-color;
+    font-family: $second-text-style;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footer-address p {
+    font-family: $first-text-style;
+    color: $main-bg-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+}
+
+.contact {
+    display:block;
+    
+    font-family: $first-text-style;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $contact-color;
+
+    padding-top: 8px;
 }
 
 .footer-nav {
-    display: flex;  
-    justify-content: space-between;
+    margin-bottom: 60px;
 }
 
-.container-beactive {
-    display:flex;
-    align-items: flex-start;
-    margin-top: 12px;
-}
+// .footer-address {
+//     margin-right: 70px;
+
+//     p {
+//         display: block;
+    
+//         color: $main-bg-color;
+//         font-style: normal;
+//         font-weight: normal;
+//         font-size: 14px;
+//         line-height: 1.7;
+//         letter-spacing: 0.03em;
+    
+//         margin-top: 20px;
+//         margin-bottom: 9px;
+//     }
+
+//     a {
+//         display: block;
+//         margin-bottom: 9px;
+//     }
+// }
+
+// footer {
+//     background-color: $third-bg-color;
+
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
+
+// .footer-nav {
+//     display: flex;  
+//     justify-content: space-between;
+// }
+
+// .container-beactive {
+//     display:flex;
+//     align-items: flex-start;
+//     margin-top: 12px;
+// }
 
 .footer-text {
     font-weight: bold;
@@ -50,24 +98,25 @@ footer {
     margin-bottom: 20px;
 }
 
-.container-social {
-    margin-right: 93px;
+// .container-social {
+//     margin-right: 93px;
 
-    .social-element {
-        background-color: rgba(255, 255, 255, 0.1);
+//     .social-element {
+//         background-color: rgba(255, 255, 255, 0.1);
     
-        transition: background-color $animation-duration $animation-type;
+//         transition: background-color $animation-duration $animation-type;
     
-        &:hover,
-        &:focus {
-            background-color: $accent-color;
-        }
-    }
-}
+//         &:hover,
+//         &:focus {
+//             background-color: $accent-color;
+//         }
+//     }
+// }
 
 .container-subscribe {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .text-subscribe {
@@ -82,6 +131,24 @@ footer {
     color: $main-bg-color;
 }
 
+.container-beactive .social-element {
+    background-color: $second-icon-color;
+    
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.container-beactive .icon-social {
+    color: $main-bg-color;
+    transition: color $animation-duration $animation-type;
+
+    &:hover,
+    &:focus {
+        color: $main-bg-color;
+    }
+}
 
 .footer-input::placeholder {
     display: flex;
@@ -96,15 +163,13 @@ footer {
 
     background-color: $third-bg-color;
     opacity: 0.6;
-    
 }
 
 .footer-input {
     height: 50px;
-    width: 358px;
-    margin-top:20px;
-    margin-right: 12px;
-    padding-left: 16px;
+    width: 450px;
+    margin-top: 20px;
+    padding-left: 16px ;
 
     color: $main-bg-color;
 
@@ -120,5 +185,34 @@ footer {
     &:hover,
     &:focus {
         border: 1px solid $accent-color;
+    }
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor:pointer;
+
+    font-family: $first-text-style;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    color: $main-bg-color;
+
+    & .icon-send {
+        margin-left: 10px;
     }
 }
