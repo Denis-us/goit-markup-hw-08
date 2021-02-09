@@ -53,37 +53,18 @@
     background-color: $main-bg-color;
     cursor: pointer;
     z-index: 1;
-    transition: $animation-duration $animation-type;
+    
 
     &:focus-within .closer-icon,
     &:hover .closer-icon {
     color:$accent-color;
+    }
 }
 
 .closer-icon {
     fill: currentColor;
-    color: $modal-icon-color;
-}
-
-.icon-modal {
-    position: absolute;
-
-    bottom:0;
-    left:0;
-
-    margin-left: 15px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-
-    color:$main-text-color;
-
-    cursor: pointer;
-
-    & .icon-input {
-        fill:currentColor;
-        color: $main-text-color;
-        transition: $animation-duration $animation-type;
-    }
+    color: $main-text-color;
+    transition: color $animation-duration $animation-type;
 }
 
 .form {
@@ -212,6 +193,23 @@
     color: $secondary-text-color;
 }
 
+.icon-modal {
+    position: absolute;
+
+    bottom:0;
+    left:0;
+
+    margin-left: 15px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+
+    cursor: pointer;
+    fill: currentColor;
+    color: $main-text-color;
+
+    transition: color $animation-duration $animation-type;
+}
+
 .form-input {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -227,8 +225,14 @@
 
     &:hover,
     &:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid $accent-color;
     }
+
+    &:hover .icon-modal,
+    &:focus-within .icon-modal {
+        color: $accent-color;
+    }
+
 }
 
 .checkbox {
@@ -269,17 +273,6 @@
     border-radius: 2px;
     transition: $animation-duration $animation-type;
 }
-.conditions {
-    font-family: $first-text-style;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-
-    letter-spacing: 0.03em;
-
-    color: $accent-color;
-}
 
 .checkbox-text {
     font-family: $first-text-style;
@@ -291,4 +284,16 @@
     letter-spacing: 0.03em;
 
     color: $secondary-text-color;
+
+    & .conditions {
+        font-family: $first-text-style;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+    
+        letter-spacing: 0.03em;
+    
+        color: $accent-color;
+    }
 }

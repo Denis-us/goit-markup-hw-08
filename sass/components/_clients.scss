@@ -1,12 +1,6 @@
-// .section-clients {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
-
 .list-clients {
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
 }
 
 .clients .list-element {
@@ -42,33 +36,14 @@
     }
 }
 
+.clients .list-element:nth-child(3n + 3) {
+    @media screen and (min-width: 768px) {
+        margin-right: 0px;
+    }
+}
+
 .icon-client {
     fill: currentColor;
     color: $first-icon-color;
     transition: color $animation-duration $animation-type;
 }
-
-// .container-client {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: rgba(175,177,184,1);
-//     width: 170px;
-//     height: 90px;
-
-//     transition: color $animation-duration $animation-type;
-    
-//     .client {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         fill: currentColor;
-    
-//         transition: $animation-duration $animation-type;
-//     }
-
-//     &:hover .client,
-//     &:focus .client {
-//         color: $accent-color;
-//     }
-// }
