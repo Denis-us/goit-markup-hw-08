@@ -36,6 +36,56 @@
     transition: transform $animation-duration $animation-type;
 }
 
+.button-closer {
+    position:absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+
+    margin-right: 8px;
+    margin-top: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid $modal-icon-color;
+    background-color: $main-bg-color;
+    cursor: pointer;
+    z-index: 1;
+    transition: $animation-duration $animation-type;
+
+    &:focus-within .closer-icon,
+    &:hover .closer-icon {
+    color:$accent-color;
+}
+
+.closer-icon {
+    fill: currentColor;
+    color: $modal-icon-color;
+}
+
+.icon-modal {
+    position: absolute;
+
+    bottom:0;
+    left:0;
+
+    margin-left: 15px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+
+    color:$main-text-color;
+
+    cursor: pointer;
+
+    & .icon-input {
+        fill:currentColor;
+        color: $main-text-color;
+        transition: $animation-duration $animation-type;
+    }
+}
+
 .form {
     position: absolute;
     top:0;
@@ -56,7 +106,7 @@
     line-height: 23px;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
-    color: #212121;
+    color: $main-text-color;
 }
 
 .form-field {
@@ -104,8 +154,8 @@
         margin-top: 10px;
     }
 
-    &:hover .icon-input,
-    &:focus-within .icon-input {
+    &:hover .icon-modal,
+    &:focus-within .icon-modal {
         color: $accent-color;
     }
 
@@ -194,7 +244,6 @@
     &:checked + .agreement-icon {
         border-color: $accent-color;
         background-color: $accent-color;
-        background-image: url(../images/check.svg);
         background-size: contain;
         background-origin: border-box;
     }
@@ -209,18 +258,17 @@
     cursor:pointer;
 }
 
-.checkbox-text {
-    font-family: $first-text-style;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+.agreement-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 9px;
 
-    letter-spacing: 0.03em;
-
-    color: $secondary-text-color;
+    border: 2px solid $main-text-color;
+    background-color: $main-bg-color;
+    border-radius: 2px;
+    transition: $animation-duration $animation-type;
 }
-
 .conditions {
     font-family: $first-text-style;
     font-style: normal;
@@ -231,4 +279,16 @@
     letter-spacing: 0.03em;
 
     color: $accent-color;
+}
+
+.checkbox-text {
+    font-family: $first-text-style;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-color;
 }
