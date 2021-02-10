@@ -24,6 +24,7 @@
 
 .qualities .list-element {
     display: block;
+    max-width: 450px;
 
     &:not(:last-child) {
         margin-bottom: 30px;

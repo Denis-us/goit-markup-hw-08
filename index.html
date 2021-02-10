@@ -49,63 +49,65 @@
     <main>
         <!-- Герой -->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button class="hero-button" data-modal-open>Заказать услугу</button>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button class="button-closer" data-modal-close>
-                        <svg width="11" height="11" class="closer-icon">
-                            <use href="./images/symbol-defs.svg#icon-modal-close"></use>
-                        </svg>
-                    </button>
-                    
-                    <form class="form">
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
+                <button class="hero-button" data-modal-open>Заказать услугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="button-closer" data-modal-close>
+                            <svg width="11" height="11" class="closer-icon">
+                                <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+                            </svg>
+                        </button>
+                        
+                        <form class="form">
 
-                        <h2 class="form-heading">Оставьте свои данные, мы вам перезвоним</h2>
-    
-                        <div class="form-field">
-                            <label class="form-label">
-                                <span class="form-name">Имя</span>
-                                <input type="text" class="form-input text" name="name" placeholder=" ">
-                                <svg width="12" height="12" class="icon-modal">
-                                    <use href="./images/symbol-defs.svg#icon-name"></use>
-                                </svg>                                  
-                            </label>
+                            <h2 class="form-heading">Оставьте свои данные, мы вам перезвоним</h2>
+        
+                            <div class="form-field">
+                                <label class="form-label">
+                                    <span class="form-name">Имя</span>
+                                    <input type="text" class="form-input text" name="name" placeholder=" ">
+                                    <svg width="12" height="12" class="icon-modal">
+                                        <use href="./images/symbol-defs.svg#icon-name"></use>
+                                    </svg>                                  
+                                </label>
 
-                            <label class="form-label">
-                                <span class="form-name">Телефон</span>
-                                <input type="tel" class="form-input tel" name="tel" placeholder=" ">
-                                <svg width="14" height="14" class="icon-modal">
-                                    <use href="./images/symbol-defs.svg#icon-phone"></use>
-                                </svg>  
-                                    
-                            </label>
-    
-                            <label class="form-label">
-                                <span class="form-name">Почта</span>
-                                <input type="email" class="form-input email" name="mail" placeholder=" ">
-                                <svg width="16" height="12" class="icon-modal">
-                                    <use href="./images/symbol-defs.svg#icon-email"></use>
-                                </svg>
-                            </label>
+                                <label class="form-label">
+                                    <span class="form-name">Телефон</span>
+                                    <input type="tel" class="form-input tel" name="tel" placeholder=" ">
+                                    <svg width="14" height="14" class="icon-modal">
+                                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                                    </svg>  
+                                        
+                                </label>
+        
+                                <label class="form-label">
+                                    <span class="form-name">Почта</span>
+                                    <input type="email" class="form-input email" name="mail" placeholder=" ">
+                                    <svg width="16" height="12" class="icon-modal">
+                                        <use href="./images/symbol-defs.svg#icon-email"></use>
+                                    </svg>
+                                </label>
 
-                            <label class="form-label">
-                                <span class="form-name">Комментарий</span>
-                                <textarea name="comment" placeholder="Введите текст"></textarea>
-                            </label>
+                                <label class="form-label">
+                                    <span class="form-name">Комментарий</span>
+                                    <textarea name="comment" placeholder="Введите текст"></textarea>
+                                </label>
 
-                            <label class="agreement">
-                                <input class="checkbox" type="checkbox" name="agreement">
-                                <svg class="agreement-icon">
-                                    <use href="./images/symbol-defs.svg#icon-agree"></use>
-                                </svg>
-                                <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
-                                <a href="" class="conditions">Условия договора</a></span>
-                            </label>
+                                <label class="agreement">
+                                    <input class="checkbox" type="checkbox" name="agreement">
+                                    <svg class="agreement-icon">
+                                        <use href="./images/symbol-defs.svg#icon-agree"></use>
+                                    </svg>
+                                    <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
+                                    <a href="" class="conditions">Условия договора</a></span>
+                                </label>
 
-                            <button type="submit">Отправить</button>
-                        </div>
-                    </form>
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -359,7 +361,7 @@
          </section>
          <section class="section clients">
             <div class="container clients">
-            <h3 class="container-title">Постоянные клиенты</h3>
+                <h3 class="container-title">Постоянные клиенты</h3>
                  <ul class="list-clients">
                      <li class="list-element">
                          <a href="" class="link">
@@ -414,47 +416,49 @@
           <section class="section footer">
             <div class="container footer">
                 <h2 class="container-title visually-hiden">Футер</h2>
-                <div class="footer-nav">
-                    <address class="footer-address">
-                        <a href="" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
-                        <p>г. Киев, пр-т Леси Украинки, 26</p>
-                        <a href="mailto:info@example.com" class="contact">info@example.com</a>
-                        <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
-                    </address>
-                </div>
-                <div class="container-beactive">
-                    <div class="container-social">
-                        <p class="footer-text">Присоединяйтесь</p>
-                        <ul class="social-networks">
-                            <li class="social-element">
-                                <a href="" class="icon">
-                                    <svg class="icon-social" width="44" height="44">
-                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-element">
-                                <a href="" class="icon">
-                                    <svg class="icon-social" width="44" height="44">
-                                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-element">
-                                <a href="" class="icon">
-                                    <svg class="icon-social" width="44" height="44">
-                                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-element">
-                                <a href="" class="icon">
-                                    <svg class="icon-social" width="44" height="44">
-                                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <address class="footer-address">
+                            <a href="" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+                            <p>г. Киев, пр-т Леси Украинки, 26</p>
+                            <a href="mailto:info@example.com" class="contact">info@example.com</a>
+                            <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
+                        </address>
+                    </div>
+                    <div class="container-beactive">
+                        <div class="container-social">
+                            <p class="footer-text">Присоединяйтесь</p>
+                            <ul class="social-networks">
+                                <li class="social-element">
+                                    <a href="" class="icon">
+                                        <svg class="icon-social" width="44" height="44">
+                                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-element">
+                                    <a href="" class="icon">
+                                        <svg class="icon-social" width="44" height="44">
+                                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-element">
+                                    <a href="" class="icon">
+                                        <svg class="icon-social" width="44" height="44">
+                                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-element">
+                                    <a href="" class="icon">
+                                        <svg class="icon-social" width="44" height="44">
+                                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="container-subscribe">
                         <p class="text-subscribe">Подпишитесь на рассылку</p>
@@ -464,8 +468,8 @@
                                 <use href="./images/symbol-defs.svg#icon-send"></use>
                             </svg>
                         </button>
-                    </div>                  
-                </div>
+                    </div>
+                </div>            
             </div>
         </section>
     </footer>
