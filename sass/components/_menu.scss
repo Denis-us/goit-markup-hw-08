@@ -1,12 +1,15 @@
-
 .menu-button {
     display: inline-flex;
-    margin: 0px;
-    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: none;
     background-color: transparent;
     cursor:pointer;
     z-index: 1;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-button .icon-cross {
@@ -27,16 +30,22 @@
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 480px;
-    height: 800px;
+    width: 480px;
+    height: 796px;
 
     background-color: $main-bg-color;
-
 
     &.is-open {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
     }
 }
 
@@ -51,6 +60,10 @@
 
 
     & .list-element {
+        margin-bottom: 32px;
+    }
+        
+    & .link {
         position: relative;
         
         color: $main-text-color;
@@ -58,8 +71,6 @@
         font-size: 40px;
         line-height: 47px;
         letter-spacing: 0.02em;
-
-        margin-bottom: 32px;
     
         transition: color $animation-duration $animation-type;
 
@@ -95,9 +106,19 @@
             background-color: $accent-color; 
         }
     }
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        margin-right: 50px;
+        height: 80px;
+    }
 }
 
-.current-color.link {
+.list-element .current-color {
     color: $accent-color;
 
     &::after {

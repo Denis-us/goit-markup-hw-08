@@ -1,9 +1,17 @@
+.container.qualities {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
 .list.qualities {
     display: block;
+    margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        flex-basis: calc((100% - 4 * 15px) / 2);
+        margin: -15px;
     }
 }
 
@@ -14,6 +22,7 @@
     padding-bottom: 25px;
     width: 450px;
     height: 120px;
+    margin-bottom: 30px;
     background-color: $secondary-bg-color;
 
     @media screen and (min-width: 768px) {
@@ -23,6 +32,7 @@
     @media screen and (min-width: 1200px) {
         width: 270px;
     }
+}
         
 
     // @media screen and (min-width: 768px) {
@@ -32,19 +42,7 @@
     // @media screen and (min-width: 1200px) {
     //     width: 270px;
     // }
-}
 
-.qualities .list-element {
-    display: block;
-    width: 450px;
-    margin: -15px;
-
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px;
-    }
-
-}
 
 //     @media screen and (min-width: 768px) {
 //         display: flex;
@@ -78,8 +76,16 @@
 //     }
 
 .qualities-text {
-    display: flex;
-    flex-wrap: wrap;
+    width: 450px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 //     @media screen and (min-width: 768px) {
