@@ -16,8 +16,7 @@
     height: 90px;
     border: 1px solid $first-icon-color;
     border-radius: 4px;
-    margin-right: -15px;
-    margin-bottom: -15px;
+    margin: -15px;
     
     background-color: $main-bg-color;
 
@@ -35,16 +34,19 @@
         color: $accent-color;
     }
 
-    @media screen and (min-width: 480px) {
-        width: calc((100% - 4 + 15px) / 2);
-        margin-right: 15px;
-        margin-bottom: 15px;
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
     }
 
-    @media screen and (min-width: 780px){
-        width: calc((100% - 6 + 15px) / 3);
-        margin-right: 15px;
-        margin-bottom: 15px;
+    @media screen and (min-width: 768px){
+        width: calc((100% - 6 * 15px) / 3);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: calc((100% - 12 * 15px) / 6);
+        margin: 15px;
     }
 }
 

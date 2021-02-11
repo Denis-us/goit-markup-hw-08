@@ -4,6 +4,12 @@ body {
     font-family: $first-text-style, sans-serif;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
+
+
 // .section {
 //     width:480px;
 //     padding-top: 60px;
@@ -27,6 +33,9 @@ body {
         width: 768px;
     }
 
+    @media screen and (min-width: 1200px){
+        width: 1200px;
+    }
 }
 
 h1, h2, h3, li, a, ul, p {
@@ -64,4 +73,5 @@ a {
     text-align: center;
     font-size: 28px;
     line-height: 33px;
+    margin-bottom: 30px;
 }

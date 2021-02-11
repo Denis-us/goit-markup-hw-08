@@ -1,5 +1,6 @@
 header {
     border-bottom: 1px solid #ECECEC;
+    position: relative;
 }
 
 .container.header {
@@ -38,12 +39,4 @@ header {
     line-height: 28px;
     letter-spacing: 0.03em;
     text-decoration: none;
-}
-
-.site-nav {
-    display: none;
-}
-
-.header-address {
-    display: none;
 }

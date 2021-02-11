@@ -1,5 +1,13 @@
 .section.direction {
     display: none;
+
+    @media screen and (min-width: 1200px){
+        display: block;
+    }
+}
+
+.list.direction {
+    display: flex;
 }
 
 .direction-block {
@@ -64,6 +72,7 @@
 .direction-block:hover .direction-text {
     transform: translateY(0%)
 }
-.dir:not(:last-child) {
+
+.list-element:not(:last-child) {
     margin-right: 30px;
 }
