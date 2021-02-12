@@ -1,9 +1,8 @@
-.section.footer {
-    background-color: $third-bg-color;
-}
-
 .container.footer{
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: $third-bg-color;
 }
 
 .logo-footer {
@@ -46,47 +45,6 @@
     margin-bottom: 60px;
 }
 
-// .footer-address {
-//     margin-right: 70px;
-
-//     p {
-//         display: block;
-    
-//         color: $main-bg-color;
-//         font-style: normal;
-//         font-weight: normal;
-//         font-size: 14px;
-//         line-height: 1.7;
-//         letter-spacing: 0.03em;
-    
-//         margin-top: 20px;
-//         margin-bottom: 9px;
-//     }
-
-//     a {
-//         display: block;
-//         margin-bottom: 9px;
-//     }
-// }
-
-// footer {
-//     background-color: $third-bg-color;
-
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
-
-// .footer-nav {
-//     display: flex;  
-//     justify-content: space-between;
-// }
-
-// .container-beactive {
-//     display:flex;
-//     align-items: flex-start;
-//     margin-top: 12px;
-// }
-
 .footer-text {
     font-weight: bold;
     font-size: 14px;
@@ -97,21 +55,6 @@
 
     margin-bottom: 20px;
 }
-
-// .container-social {
-//     margin-right: 93px;
-
-//     .social-element {
-//         background-color: rgba(255, 255, 255, 0.1);
-    
-//         transition: background-color $animation-duration $animation-type;
-    
-//         &:hover,
-//         &:focus {
-//             background-color: $accent-color;
-//         }
-//     }
-// }
 
 .container-subscribe {
     display: flex;

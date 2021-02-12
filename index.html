@@ -16,14 +16,14 @@
         <div class="container header">
             <a href="" class="logo-header"><span class="logo-web">Web</span>Studio</a>
 
-            <button class="menu-button is-open" width="40" height="40" data-menu-button>
+            <button class="menu-button" width="40" height="40" data-menu-button>
                 <svg class="header-menu" width="24" height="16" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./images/symbol-defs.svg#icon-open-menu"></use>
                     <use class="icon-cross" href="./images/symbol-defs.svg#icon-close-menu"></use>
                 </svg>
             </button>
 
-            <div class="menu-container is-open" id="menu-container" data-menu>
+            <div class="menu-container" id="menu-container" data-menu>
                 <div class="navigation">
                     <ul class="site-nav">
                         <li class="list-element"><a href="" class="link current-color">Студия</a></li>
@@ -70,62 +70,62 @@
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
                 <button class="hero-button" data-modal-open>Заказать услугу</button>
-                <div class="backdrop is-hidden" data-modal>
-                    <div class="modal">
-                        <button class="button-closer" data-modal-close>
-                            <svg width="11" height="11" class="closer-icon">
-                                <use href="./images/symbol-defs.svg#icon-modal-close"></use>
-                            </svg>
-                        </button>
+            </div>
+                
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="button-closer" data-modal-close>
+                        <svg width="11" height="11" class="closer-icon">
+                            <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+                        </svg>
+                    </button>
                         
-                        <form class="form">
+                    <form class="form">
 
-                            <h2 class="form-heading">Оставьте свои данные, мы вам перезвоним</h2>
+                        <h2 class="form-heading">Оставьте свои данные, мы вам перезвоним</h2>
         
-                            <div class="form-field">
-                                <label class="form-label">
-                                    <span class="form-name">Имя</span>
-                                    <input type="text" class="form-input text" name="name" placeholder=" ">
-                                    <svg width="12" height="12" class="icon-modal">
-                                        <use href="./images/symbol-defs.svg#icon-name"></use>
-                                    </svg>                                  
-                                </label>
+                        <div class="form-field">
+                            <label class="form-label">
+                                <span class="form-name">Имя</span>
+                                <input type="text" class="form-input text" name="name" placeholder=" ">
+                                <svg width="12" height="12" class="icon-modal">
+                                    <use href="./images/symbol-defs.svg#icon-name"></use>
+                                </svg>                                  
+                            </label>
 
-                                <label class="form-label">
-                                    <span class="form-name">Телефон</span>
-                                    <input type="tel" class="form-input tel" name="tel" placeholder=" ">
-                                    <svg width="14" height="14" class="icon-modal">
-                                        <use href="./images/symbol-defs.svg#icon-phone"></use>
-                                    </svg>  
-                                        
-                                </label>
+                            <label class="form-label">
+                                <span class="form-name">Телефон</span>
+                                <input type="tel" class="form-input tel" name="tel" placeholder=" ">
+                                <svg width="14" height="14" class="icon-modal">
+                                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                                </svg>         
+                            </label>
         
-                                <label class="form-label">
-                                    <span class="form-name">Почта</span>
-                                    <input type="email" class="form-input email" name="mail" placeholder=" ">
-                                    <svg width="16" height="12" class="icon-modal">
-                                        <use href="./images/symbol-defs.svg#icon-email"></use>
-                                    </svg>
-                                </label>
+                            <label class="form-label">
+                                <span class="form-name">Почта</span>
+                                <input type="email" class="form-input email" name="mail" placeholder=" ">
+                                <svg width="16" height="12" class="icon-modal">
+                                    <use href="./images/symbol-defs.svg#icon-email"></use>
+                                </svg>
+                            </label>
 
-                                <label class="form-label">
-                                    <span class="form-name">Комментарий</span>
-                                    <textarea name="comment" placeholder="Введите текст"></textarea>
-                                </label>
+                            <label class="form-label">
+                                <span class="form-name">Комментарий</span>
+                                <textarea name="comment" placeholder="Введите текст"></textarea>
+                            </label>
 
-                                <label class="agreement">
-                                    <input class="checkbox" type="checkbox" name="agreement">
-                                    <svg class="agreement-icon">
-                                        <use href="./images/symbol-defs.svg#icon-agree"></use>
-                                    </svg>
-                                    <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
-                                    <a href="" class="conditions">Условия договора</a></span>
-                                </label>
+                            <label class="agreement">
+                                <input class="checkbox" type="checkbox" name="agreement">
+                                <svg class="agreement-icon">
+                                    <use href="./images/symbol-defs.svg#icon-agree"></use>
+                                </svg>
+                                <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
+                                <a href="" class="conditions">Условия договора</a></span>
+                            </label>
 
-                                <button type="submit">Отправить</button>
-                            </div>
-                        </form>
-                    </div>
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -227,7 +227,10 @@
                 
                 <ul class="list team">
                     <li class="list-element">
-                        <img src="./images/igor.jpg" alt="igor" width="450" height="460">
+                        <img
+                            srcset="./images/igor.jpg 1x, ./images/igor2x.jpg 2x"
+                            src="./images/igor.jpg"
+                            alt="igor">
                         <div class="info">
                             <h3 class="specialist">Игорь Демьяненко</h3>
                             <p class="position">Product Designer</p>
@@ -264,7 +267,10 @@
                         </div>
                     </li>
                     <li class="list-element">
-                        <img src="./images/olga.jpg" alt="olga" width="450" height="460">
+                        <img
+                            srcset="./images/olga.jpg 1x, ./images/olga2x.jpg 2x"
+                            src="./images/olga.jpg"
+                            alt="olga">
                         <div class="info">
                             <h3 class="specialist">Ольга Репина</h3>
                             <p class="position">Frontend Developer</p>
@@ -301,7 +307,10 @@
                         </div>
                     </li>
                     <li class="list-element">
-                        <img src="./images/nickol.jpg" alt="nickol" width="450" height="460">
+                        <img
+                            srcset="./images/nickolay.jpg 1x, ./images/nickolay2x.jpg 2x"
+                            src="./images/nickolay.jpg"
+                            alt="nickol">
                         <div class="info">
                             <h3 class="specialist">Николай Тарасов</h3>
                             <p class="position">Marketing</p>
@@ -338,7 +347,10 @@
                         </div>
                     </li>
                     <li class="list-element">
-                        <img src="./images/misha.jpg" alt="misha" width="450" height="460">
+                        <img
+                            srcset="./images/mykhail.jpg 1x, ./images/mykhail2x.jpg 2x"
+                            src="./images/mykhail.jpg"
+                            alt="misha">
                         <div class="info">
                             <h3 class="specialist">Михаил Ермаков</h3>
                             <p class="position">UI Designer</p>

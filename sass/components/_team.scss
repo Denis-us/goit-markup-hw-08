@@ -1,22 +1,11 @@
-.section.team {
-    width: 100%;
+.container.team {
+    padding-top: 60px;
     background-color: $secondary-bg-color;
 }
 
-.container.team {
-    padding-top: 60px;
-}
-
 .list.team {
-    display: block;
-    margin-bottom: 30px;
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: calc((100% - 4 * 15px) / 2);
-        margin: -15px;
-    }
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .team .list-element {
@@ -26,10 +15,12 @@
 
     width: 450px;
     height: 622px;
+    margin-bottom: -15px;
    
     @media screen and (min-width: 768px) {
-        width: 354px;
         height: 536px;
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px
     }
 
     @media screen and (min-width: 1200px) {
@@ -38,11 +29,20 @@
     }
 }
 
-// .team .list-element:nth-child(2n + 1) {
-//     @media screen and (min-width: 768px) {
-//         margin-right: 30px;
-//     }
-// }
+.list-element img {
+    width: 450px;
+    height: 460px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+    }
+}
 
 .specialist {
     font-weight: 500;
