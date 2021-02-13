@@ -1,7 +1,5 @@
 .container.footer{
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 30px;
     background-color: $third-bg-color;
 }
 
@@ -37,7 +35,9 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $contact-color;
+}
 
+.footer-address .contact {
     padding-top: 8px;
 }
 

@@ -1,5 +1,4 @@
 .container.team {
-    padding-top: 60px;
     background-color: $secondary-bg-color;
 }
 
@@ -15,32 +14,19 @@
 
     width: 450px;
     height: 622px;
-    margin-bottom: -15px;
-   
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    
     @media screen and (min-width: 768px) {
         height: 536px;
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px
+        width: 354px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 270px;
         height: 428px;
-    }
-}
-
-.list-element img {
-    width: 450px;
-    height: 460px;
-
-    @media screen and (min-width: 768px) {
-        width: 354px;
-        height: 374px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-        height: 260px;
     }
 }
 
