@@ -7,8 +7,8 @@ header {
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     width: 480px;
     height: 60px;
 
@@ -27,6 +27,14 @@ header {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .container.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .logo-header {
     color: $main-text-color;
     font-family: $second-text-style;
@@ -39,6 +47,10 @@ header {
 
     @media screen and (min-width: 768px) {
         margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
     }
 }
 
