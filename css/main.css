@@ -67,7 +67,6 @@ a {
 
 header {
   border-bottom: 1px solid #ECECEC;
-  position: relative;
 }
 
 .container.header {
@@ -82,12 +81,12 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 480px;
+  width: 100%;
   height: 60px;
 }
 @media screen and (min-width: 480px) {
   .container.header {
-    width: 480px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -135,6 +134,29 @@ header {
   text-decoration: none;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .site-nav, .header-address, .list.social-networks {
     padding: 40px 48px 40px 48px;
@@ -161,16 +183,14 @@ header {
             align-items: center;
   }
 }
-.site-nav .list-element {
-  margin-bottom: 32px;
-}
-@media screen and (min-width: 768px) {
-  .site-nav .list-element {
-    margin-bottom: 0;
-  }
-}
 .site-nav .link {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #212121;
   font-weight: 500;
   font-size: 40px;
@@ -208,6 +228,13 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .site-nav .link::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .site-nav .link:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -244,6 +271,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  height: 80px;
 }
 @media screen and (min-width: 768px) {
   .header-address {
@@ -265,6 +293,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -378,15 +409,23 @@ header {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
   border: none;
   background-color: transparent;
   cursor: pointer;
   z-index: 2;
+  width: 40px;
+  height: 40px;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -421,10 +460,8 @@ header {
   .menu-container {
     display: none;
     position: absolute;
-    top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0;
     background-color: #FFFFFF;
     z-index: 1;
   }
@@ -648,7 +685,7 @@ header {
   margin-bottom: 28px;
 }
 .form-field button {
-  font-family: #212121;
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1614,7 +1651,7 @@ header {
   position: absolute;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 1, 5;
+  letter-spacing: 0.03em;
   color: #FFFFFF;
   top: 0;
   left: 0;
