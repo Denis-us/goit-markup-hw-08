@@ -30,6 +30,27 @@
     }
 }
 
+// @media screen and (max-width: 767px) {
+//     .team .list-element {
+//         margin-right: 30px;
+//     }
+// }
+
+@media screen and (min-width: 768px) {
+    .team .list-element:nth-child(2n+1) {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team .list-element {
+        margin-right: 30px;
+    }
+    .team .list-element:nth-child(4n) {
+        margin-right: 0px;
+    }
+}
+
 .specialist {
     font-weight: 500;
     font-size: 16px;

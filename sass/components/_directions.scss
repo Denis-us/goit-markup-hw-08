@@ -43,6 +43,14 @@
     &:hover .direction-text {
     transform: translateY(0%)
     }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.direction .list-element:not(:last-child) {
+    margin-right: 30px;
 }
 
 .direction-text {    

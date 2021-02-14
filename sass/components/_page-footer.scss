@@ -1,6 +1,10 @@
 .container.footer{
     text-align: center;
     background-color: $third-bg-color;
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .logo-footer {
@@ -43,6 +47,10 @@
 
 .footer-nav {
     margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-text {
@@ -60,6 +68,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.subscribe-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .text-subscribe {
@@ -128,6 +152,11 @@
     &:hover,
     &:focus {
         border: 1px solid $accent-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
     }
 }
 
