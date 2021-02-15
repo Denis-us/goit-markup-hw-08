@@ -6,6 +6,12 @@
     }
 }
 
+.direction .container-title{
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
 .list.direction {
     display: flex;
 }

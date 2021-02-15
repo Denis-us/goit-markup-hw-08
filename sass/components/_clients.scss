@@ -4,7 +4,9 @@
 }
 
 .clients .container-title {
-    margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+        margin-bottom: 35px;
+    }
 }
 
 .clients .list-element {

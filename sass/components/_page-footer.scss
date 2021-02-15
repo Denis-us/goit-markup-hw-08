@@ -1,6 +1,7 @@
 .container.footer{
     text-align: center;
     background-color: $third-bg-color;
+    width: 100%;
 
     @media screen and (min-width: 1200px) {
         text-align: start;
